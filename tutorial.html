@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Oximeter Project Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <button id="back-to-top"><i class="fas fa-chevron-up"></i></button>
+    <!-- Header Section -->
+    <header>
+        <h1>DIY Pulse Oximeter Tutorial</h1>
+        <!-- <p>Learn to Build and Utilize Your Own Pulse Oximeter</p> -->
+    </header>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#components">Components</a>
+        <a href="#resistors">Resistors</a>
+        <a href="#drivers">Drivers</a>
+        <a href="#setup">Setup</a>
+        <a href="#readings">Readings</a>
+        <a href="#conclusion">Conclusion</a>
+    </nav>
+    <section id="overview" class="introduction">
+        <h2>Overview</h2>
+        <p>This tutorial will guide you through building a pulse oximeter using the Arduino Nano and the MAX30100 sensor. The project will enable you to monitor heart rate and blood oxygen saturation (SpO₂) levels, displaying the readings on a local webpage.</p>
+    </section>
+    <section id="components">
+        <h2>Components Used</h2>
+        <ul>
+            <li>Arduino Nano/UNO</li>
+            <li>MAX30100 Pulse Oximeter Sensor</li>
+            <li>USB Cable for Arduino</li>
+            <li>Breadboard and Jumper Wires</li>
+            <li>Resistors (3x4.7kOhm)</li>
+        </ul>
+    </section>
+    <section id="resistors">
+        <h2>Important Note</h2>
+        <p>If you are using the MAX30100 sensor with resistors, make sure to remove them before connecting to the Arduino. This ensures that the sensor operates correctly.</p>
+        <img src="resources/max30100.png" alt="remove_resistors">
+    </section>
+    <section id="drivers">        
+        <h2>Driver Installation</h2>
+        <h3>Identifying the Correct Port</h3>
+        <p>When you connect your Arduino to your computer, it should show up as a COM port (like COM3 on Windows) or /dev/ttyUSB0 (on Linux). Here’s how to ensure you’re selecting the right port:</p>
+        
+        <h4>For Windows</h4>
+        <ol>
+            <li>Open Device Manager (right-click on the Start button and select Device Manager).</li>
+            <li>Look under the "Ports (COM & LPT)" section. You should see something like "Arduino Nano (COM3)".</li>
+            <li>Make a note of the COM port number (e.g., COM3) to use it in your code.</li>
+        </ol>
+
+        <h4>For Linux</h4>
+        <ol>
+            <li>Open a terminal window.</li>
+            <li>Run the following command to list connected devices:
+                <pre><code>ls /dev/tty*</code></pre>
+            </li>
+            <li>You should see a device listed as /dev/ttyUSB0 (or similar). This is your Arduino.</li>
+            <li>Make a note of this port for your code.</li>
+        </ol>
+    </section>
+    <section id="setup">
+        <h2>Setup Instructions</h2>
+        <ol>
+            <li>Connect the MAX30100 sensor to the Arduino as follows:
+                <ul>
+                    <li>VCC to 5V</li>
+                    <li>GND to GND</li>
+                    <li>SDA to A4</li>
+                    <li>SCL to A5</li>
+                </ul>
+            </li>
+            <li>Download the Arduino IDE and upload the Arduino code that uses the MAX30100 library (Found in example sketches after install MAX30100 library) to read heart rate and SpO₂ values. If you are a complete beginner and want to start learning about Arduino from scratch then I would suggest you watch this <a href="https://www.youtube.com/watch?v=DPqiIzK97K0&t=6652s" target="_blank" rel="noopener noreferrer" style="color: #0984e3; font-weight: bold; text-decoration: underline;">youtube video from freeCodeCamp</a> which helped me a lot in the beggining of my electronics journey.</li>
+            <li>Once the code is uploaded, connect the Arduino to your computer via USB.</li>
+            <li>Open the local webpage (Link can be found below) you created to visualize the readings.</li>
+            <li><strong>Note: </strong>Works only on select browsers which support serial port monitoring (Brave, Chrome, Microsoft Edge)</li>
+        </ol>
+        <img src="resources/circuit_diagram.png" alt="circuit">
+    </section>
+    <section id="readings">
+        <h2>Accessing Readings</h2>
+        <p>On the webpage, click the "Connect to Pulse Oximeter" button. This will open a dialog to select the appropriate COM port for your Arduino. Once connected, the heart rate and SpO₂ readings will be displayed in real-time.</p>
+    </section>
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>This project is a great way to learn about sensors, microcontrollers, and web development. You can expand this project by adding more features like data logging or visualizing trends over time. You can now visit the real-time readings page by clicking the button below.</p>
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="online_oximeter.html" style="text-decoration: none;">
+                <button style="padding: 15px 30px; margin: 5px; font-size: 1.2em; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Real-time Readings
+                </button>
+            </a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Pulse Oximeter Project
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

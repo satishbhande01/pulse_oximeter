@@ -1,0 +1,429 @@
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+scroll-padding-top: 80px; /* Set this equal to or a bit more than the navbar height */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.8;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+.formula{
+    text-align: center;
+    padding-top: 3em;
+    font-weight:bold ;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1.2px;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically in the center */
+    padding: 20px 0;
+    background-color: #0984e3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px; /* Adjusted padding for more balance */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 6px;
+    margin: 0 10px; /* Space between links */
+}
+
+nav a:hover {
+    background-color: #74b9ff;
+    color: #fff;
+}
+
+/* Introduction Section */
+.introduction {
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.introduction h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #0984e3;
+    text-align: center;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #555;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0984e3;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 70px;
+    height: 4px;
+    background-color: #0984e3;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+
+section p, section ul {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-align: justify;
+    color: #555;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 50px;
+}
+
+section ul li {
+    margin-bottom: 12px;
+}
+section ol{
+    margin-left: 20px;
+}
+section img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
+height: auto;
+border-radius: 5em;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .introduction, section {
+        padding: 40px 20px;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+}
+#back-to-top {
+position: fixed;
+bottom: 40px;
+right: 40px;
+background-color: #0984e3;
+color: white;
+padding: 10px 15px;
+border-radius: 50%;
+cursor: pointer;
+display: none;
+z-index: 1000;
+font-size: 20px;
+box-shadow: 0 6px 12px rgba(233, 231, 231, 0.2);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Share Section */
+#share {
+    position: relative; /* Ensure the section is positioned relative to the modal */
+    padding: 20px;
+}
+
+/* Share Section */
+#share {
+    padding: 20px;
+}
+
+/* Share Section */
+#share {
+    padding: 20px;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity */
+    padding: 0; /* Remove any padding */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Add a max width to prevent it from being too wide */
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Share links */
+.modal-content a {
+    display: block; /* Make each link take a full line */
+    margin: 10px 0;
+    padding: 10px;
+    color: #0984e3;
+    text-decoration: none;
+    border: 1px solid #0984e3;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.modal-content a:hover {
+    background-color: #dfe6e9;
+}
+
+/* Feedback Section Styles */
+.feedback-section {
+    text-align: center;
+}
+
+.feedback-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0984e3;
+}
+
+.feedback-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.feedback-section button {
+    background-color: #0984e3; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.feedback-section button:hover {
+    background-color: #74b9ff; /* Lighter shade on hover */
+}
+
+/* Share Button Container */
+.share-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space from the feedback section */
+    margin-bottom: 20px;
+    padding-bottom: 20px; /* Add padding below if necessary */
+}
+
+/* Share Button */
+#shareButton {
+    background-color: #28a745; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 20px 40px; /* Increased padding for size */
+    font-size: 1.2rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+#shareButton:hover {
+    background-color: #48b44e; /* Lighter shade on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Share links */
+.modal-content a {
+    display: block; /* Make each link take a full line */
+    margin: 10px 0;
+    padding: 10px;
+    color: #0984e3;
+    text-decoration: none;
+    border: 1px solid #0984e3;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.modal-content a:hover {
+    background-color: #dfe6e9;
+}

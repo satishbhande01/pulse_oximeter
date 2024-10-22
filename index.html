@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive information on Pulse Oximeters: Principles, Components, Mechanisms, Accuracy, Clinical Significance, Limitations, Current Trends, and DIY Projects.">
+    <title>Pulse Oximeters - Comprehensive Guide</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <button id="back-to-top"><i class="fas fa-chevron-up"></i></button>
+    <!-- Header Section -->
+    <header>
+        <h1>DIY Pulse Oximeter</h1>
+        <p>Learn to Build and Utilize Your Own Pulse Oximeter</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#why">Why create?</a>
+        <a href="#arduino">Arduino</a>
+        <a href="#features">Features</a>
+        <a href="#guide">Guide</a>
+        <a href="#web-guide">Web Interface</a>
+        <a href="#understand-readings">Understand Readings</a>
+        <a href="#working">Working</a>
+        <a href="#clinical">Clinical Significance</a>
+        <a href="#improvements">Improvements</a>
+        <a href="#more_projects">More Projects</a>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <h2>Introduction</h2>
+        <p>
+            This article guides you in making your own Arduino-based pulse oximeter. Although it would be much easier and more efficient to purchase one from an online retailer or your nearest medical store, building a pulse oximeter by yourself marks a great learning experience. This article also tells you about the functioning and significance of these devices along with an introduction to the use of Arduino and its relevance in teaching students and enthusiasts about electronics. This article will guide you to use a web-based interface to display the readings from your pulse oximeter, and finally, an overview of other projects related to the biomedical field that can be created. <strong>Please note that this website is only for educational purposes.</strong>
+        </p>
+        <img src="resources/pulse_oximeters.png" alt="oximeter">
+    </section>
+
+    <!-- Additional Sections like Basic Principle, Components, etc. -->
+    <!-- Keep your current sections here -->
+     <!-- Why Build it? -->
+    <section id="why">
+        <h2>Why Build Your Own Pulse Oximeter?</h2>
+        <ul>
+            <li>
+                Naturally this question was supposed to arise as to why even consider making a pulse oximeter in the first place. The answer to that question is simple; by creating this project you get a chance to learn about biology, electronics and programming at the same time. It doesn’t necessarily matter which age group you belong to but if you are a high school student right now this article might be helpful to you for a school project. You might be looking for a fun little electronics project or you are simply here as an enthusiast. Regardless of the purpose by the end of this article, you’ll have a pulse oximeter at your home if you correctly follow the given instructions.
+            </li>
+            <li>
+                Another neat reason to create this project is that this project is a great first step towards learning about robotics in the future. Yes, you read that correctly! An Arduino is still an integral part of major robotics projects. Arduino can be used in robotics projects for tasks like controlling motors, sensors, and actuators. It helps build robots that can move, sense the environment, avoid obstacles, follow lines, or even interact with users.
+            </li>
+            <li>
+                But I know some of you might be scratching your head right now and asking what exactly an Arduino is. The answer to that lies in the next section.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Arduino Overview -->
+    <section id="arduino">
+        <h2>Arduino- An overview</h2>
+        <ul>
+            <li>
+                Arduino is an open-source electronics platform that combines easy-to-use hardware and software, designed for people of all skill levels. At its core, Arduino boards are small, programmable microcontrollers that can control and interact with various electronic components like sensors, motors, and LEDs. Users write code in the Arduino IDE (Integrated Development Environment) to create projects ranging from simple gadgets to complex systems. Arduino is popular for DIY electronics, robotics, and automation projects because it’s beginner-friendly, affordable, and well-supported by a large community.
+            </li>
+            <li>
+                You can learn more about Arduino <a href="https://www.arduino.cc/en/Guide/Introduction" target="_blank" rel="noopener noreferrer" style="color: #0984e3; font-weight: bold; text-decoration: underline;">here</a>.
+            </li>
+        </ul>
+        <img src="resources/arduino_main.jpg" alt="components">
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <h2>DIY Pulse Oximeter- Key Features</h2>
+        <ul>
+            <li>
+                Real-time SpO2 and heart rate monitoring
+            </li>
+            <li>
+                USB Connectivity for easy data reading.
+            </li>
+            <li>
+                Website integration of Arduino.
+            </li>
+        </ul>
+    </section>
+
+    <!--Step-by-Step Guide -->
+    <section id="guide">
+        <h2>Building the DIY Pulse Oximeter: A Step-by-Step Guide</h2>
+        <ul>
+            <li>
+                Whether you’re a beginner or an experienced maker, this guide will walk you through every stage, from gathering materials to assembling the components and coding the device.
+            </li>
+            <li>
+                To get started on building your pulse oximeter, <strong>click on the button below</strong> for the full step-by-step guide. You’ll find clear instructions, wiring diagrams, and the necessary code to make your project a success. This tutorial is designed to help you not only follow along but also explore advanced customizations for a more personalized device.
+            </li>
+        </ul>
+        <!-- Buttons for navigation -->
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="tutorial.html" style="text-decoration: none;">
+                <button style="padding: 15px 30px; margin: 5px; font-size: 1.2em; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Go to Tutorial
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Web Interface guide -->
+    <section id="web-guide">
+        <h2>How to Use the DIY Pulse Oximeter on Our Website</h2>
+        <ul>
+            <li>
+                Now that you have created your pulse oximeter you can make use of the button given below to open the page on which you can get the real-time readings from your connected pulse oximeter.
+            </li>
+            <li>
+                Make sure you have the necessary drivers installed on your system and make sure you have uploaded the correct code to your Arduino.
+            </li>
+            <li>
+                Once you connect the USB and open the webpage, you’ll press the “Connect to Pulse Oximeter” button and you’ll be prompted to select the Port. Select the relevant port and the readings should be visible on the webpage.
+            </li>
+            <li>
+                You can also find the code to create the real-time SpO2 monitoring webpage <a href="https://drive.google.com/file/d/1gkBAZzW_uTR3Ks8BINpZa-vYRO6IfWjN/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: #0984e3; font-weight: bold; text-decoration: underline;">here</a>.
+            </li>
+            <li>
+                <strong>Note:</strong> Works only on select browsers that support serial port monitoring (Brave, Chrome, Microsoft Edge). If you still face any problem on the web interface you can always use the Arduino IDE serial port monitor to get the real-time readings.
+            </li>
+        </ul>
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="online_oximeter.html" style="text-decoration: none;">
+                <button style="padding: 15px 30px; margin: 5px; font-size: 1.2em; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Real-time Readings
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Understanding Readings -->
+    <section id="understand-readings">
+        <h2>Understanding the Pulse Oximeter Readings</h2>
+        <ul>
+            <li>
+                <strong>Oxygen Saturation (SpO₂):</strong> SpO₂ is the percentage of haemoglobin molecules in the blood that are saturated with oxygen. The normal range for SpO₂ levels is typically from 95% to 100% in healthy individuals (Hess, 2016).
+            </li>
+            <li>
+                <strong>Haemoglobin and Light Absorption:</strong> Haemoglobin, the protein in red blood cells responsible for oxygen transport, has different light absorption characteristics depending on whether it is oxygenated (oxyhaemoglobin) or deoxygenated (deoxyhaemoglobin). Pulse oximeters exploit these differences to determine SpO₂ (Sun & Thakor, 2016).
+            </li>
+        </ul>
+    </section>
+    <!--Working-->
+    <section id="working">
+        <h2>Working of a Pulse Oximeter</h2>
+        <p>
+            The working of a standard pulse oximeter can be understood from its components. It consists of three main parts:
+        </p>
+        <ul>
+            <li>
+                <strong>Light Emitters:</strong> Typically, two light-emitting diodes (LEDs) emit light at specific wavelengths—commonly red (around 660 nm) and infrared (around 940 nm). These wavelengths are chosen because of their differential absorption by oxyhemoglobin and deoxyhemoglobin (Tamura, 2019).
+            </li>
+            <li>
+                <strong>Photodetector:</strong> Positioned adjacent to the emitters, the photodetector captures the light that passes through or is reflected by the blood vessels in the tissue (commonly the fingertip, earlobe, or other peripheral sites) (Tamura, 2019).
+            </li>
+            <li>
+                <strong>Microprocessor:</strong> This component analyzes the detected light signals, processes the data, and calculates the SpO₂ value, which is then displayed to the user.
+            </li>
+        </ul>
+        <img src="resources/components.jpg" alt="components">
+
+    </section>
+    <!-- Clinical Significance -->
+    <section id="clinical">
+        <h2>Clinical Significance</h2>
+        <ul>
+            <li>
+                <strong>Newborn Screening for CCHD:</strong> Pulse oximetry has been suggested as a newborn screening method for identifying critical congenital heart disease (CCHD), which refers to heart defects that necessitate surgery or catheter-based intervention within the first year of life. Since many newborns with CCHD experience some level of hypoxemia early on, pulse oximetry is recommended as a screening tool to detect neonatal CCHD before hospital discharge, even before symptoms appear (Nitzan et al., 2014).
+            </li>
+            <li>
+                <strong>COVID-19 Pandemic:</strong> The COVID-19 pandemic highlighted the importance of remote health monitoring tools, with pulse oximeters emerging as vital devices for both patients and healthcare providers. COVID-19 can cause significant respiratory issues, including hypoxemia (low blood oxygen levels), which may not always present with noticeable symptoms. Pulse oximeters enable early detection of declining oxygen saturation, allowing for timely medical intervention (Bickler et al., 2021; Luks & Swenson, 2020).
+            </li>
+            <li>
+                <strong>Chronic Obstructive Pulmonary Disease (COPD):</strong> COPD is a progressive lung disease that impairs breathing. Regular tracking of oxygen saturation helps manage the chronic nature of COPD, ensuring that patients maintain adequate oxygen levels throughout daily activities (Schermer et al., 2009).
+            </li>
+        </ul>
+    </section>
+
+    <!-- Improvements -->
+    <section id="improvements">
+        <h2>Possible Improvements in the DIY Pulse Oximeter</h2>
+        <ul>
+            <li>
+                Use of a microcontroller station like ESP32 to get real-time readings wirelessly.
+            </li>
+            <li>
+                Making use of modern sensors other than MAX30100.
+            </li>
+            <li>
+                Create a mobile app that connects wirelessly to your Arduino.
+            </li>
+            <li>
+                Mounting it on a PCB and making it more compact.
+            </li>
+        </ul>
+        <img src="resources/ESP32.jpg" alt="components" width="80%">
+    </section>
+    <section id="more_projects">
+        <h2>More Biomedical Arduino Projects</h2>
+        <ul>
+            <li>
+                <strong>Temperature and Humidity Monitor:</strong> Create a system that monitors body temperature and environmental humidity using temperature sensors and displays the data on a screen.
+            </li>
+            <li>
+                <strong>Glucometer:</strong> Design a basic glucose meter that utilizes specific sensors to measure blood glucose levels, providing results through a display.
+            </li>
+            <li>
+                <strong>Respiration Rate Monitor:</strong> Construct a device that measures respiratory rates using a pressure sensor or microphone to detect breath patterns.
+            </li>
+            <li>
+                <strong>Smart Pill Dispenser:</strong> Develop an automated pill dispenser that reminds users when to take medication, integrating with a microcontroller and sensors.
+            </li>
+            <li>
+                <strong>Ambient Light Sensor for Patients:</strong> Create a system that monitors light levels in patient rooms to ensure optimal lighting conditions for recovery.
+            </li>
+            <li>
+                <strong>Wearable Health Tracker:</strong> Design a wearable device that tracks various health metrics (like steps, heart rate, etc.) and syncs data to a mobile app.
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Conclusion</h2>
+        <p>
+            Thank you for exploring our DIY Pulse Oximeter project! We hope this guide has inspired you to delve deeper into the world of biomedical engineering and Arduino projects. Whether you're a beginner or an experienced maker, creating your own pulse oximeter can be a rewarding experience that enhances your understanding of health monitoring technology. We encourage you to experiment, modify, and share your own findings as you embark on this journey. Your feedback and experiences are invaluable to us, so please feel free to reach out with any questions or insights. Together, let’s innovate and improve our understanding of health technology!
+        </p>
+    </section>
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback-section">
+        <h2>Your Feedback Matters!</h2>
+        <p>We would love to hear your thoughts about our DIY Pulse Oximeter project. Please share your feedback below:</p>
+        <form id="feedbackForm">
+            <textarea placeholder="Type your feedback here..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Share Button -->
+    <div class="share-container">
+        <button id="shareButton">Spread The Word</button>
+    </div>
+
+    <!-- Share Modal -->
+    <div id="shareModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Share This Page</h2>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=YOUR_URL" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL" target="_blank">LinkedIn</a>
+            <a href="https://pinterest.com/pin/create/button/?url=YOUR_URL" target="_blank">Pinterest</a>
+        </div>
+    </div>
+    <section>
+        <h2>References</h2>
+        <ul>
+            <li>A V J Challoner, & C A Ramsay. (1974). A photoelectric plethysmograph for the measurement of cutaneous blood flow. <i>Physics in Medicine & Biology</i>, 19(3), 317–328. <a href="https://doi.org/10.1088/0031-9155/19/3/003" target="_blank">https://doi.org/10.1088/0031-9155/19/3/003</a></li>
+            <li>Basaranoglu, G., Bakan, M., Umutoglu, T., Zengin, S. U., Idin, K., & Salihoglu, Z. (2015). Comparison of SpO2 values from different fingers of the hands. <i>SpringerPlus</i>, 4(1). <a href="https://doi.org/10.1186/s40064-015-1360-5" target="_blank">https://doi.org/10.1186/s40064-015-1360-5</a></li>
+            <li>Bickler, P. E., Feiner, J. R., Lipnick, M. S., & McKleroy, W. (2021). “Silent” Presentation of Hypoxemia and Cardiorespiratory Compensation in COVID-19. In <i>Anesthesiology</i> (Vol. 134, Issue 2, pp. 262–269). Lippincott Williams and Wilkins. <a href="https://doi.org/10.1097/ALN.0000000000003578" target="_blank">https://doi.org/10.1097/ALN.0000000000003578</a></li>
+            <li>Hakverdioǧlu Yönt, G., Akin Korhan, E., & Dizer, B. (2014). The effect of nail polish on pulse oximetry readings. <i>Intensive and Critical Care Nursing</i>, 30(2), 111–115. <a href="https://doi.org/10.1016/j.iccn.2013.08.003" target="_blank">https://doi.org/10.1016/j.iccn.2013.08.003</a></li>
+            <li>Hess, D. R. (2016). Pulse oximetry: Beyond SpO2. <i>Respiratory Care</i>, 61(12), 1671–1680. <a href="https://doi.org/10.4187/respcare.05208" target="_blank">https://doi.org/10.4187/respcare.05208</a></li>
+            <li>John, A., Nundy, K. K., Cardiff, B., & John, D. (2021). SomnNET: An SpO2 Based Deep Learning Network for Sleep Apnea Detection in Smartwatches. <i>Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBS</i>, 2021-January, 1961–1964. <a href="https://doi.org/10.1109/EMBC46164.2021.9631037" target="_blank">https://doi.org/10.1109/EMBC46164.2021.9631037</a></li>
+            <li>Luks, A. M., & Swenson, E. R. (2020). Pulse oximetry for monitoring patients with COVID-19 at home potential pitfalls and practical guidance. In <i>Annals of the American Thoracic Society</i> (Vol. 17, Issue 9, pp. 1040–1046). American Thoracic Society. <a href="https://doi.org/10.1513/AnnalsATS.202005-418FR" target="_blank">https://doi.org/10.1513/AnnalsATS.202005-418FR</a></li>
+            <li>Nitzan, M., Romem, A., & Koppel, R. (2014). Pulse oximetry: Fundamentals and technology update. In <i>Medical Devices: Evidence and Research</i> (Vol. 7, Issue 1, pp. 231–239). Dove Medical Press Ltd. <a href="https://doi.org/10.2147/MDER.S47319" target="_blank">https://doi.org/10.2147/MDER.S47319</a></li>
+            <li>Schermer, T., Leenders, J., in’t veen, H., van den Bosch, W., Wissink, A., Smeele, I., & Chavannes, N. (2009). Pulse oximetry in family practice: Indications and clinical observations in patients with COPD. <i>Family Practice</i>, 26(6), 524–531. <a href="https://doi.org/10.1093/fampra/cmp063" target="_blank">https://doi.org/10.1093/fampra/cmp063</a></li>
+            <li>Sun, Y., & Thakor, N. (2016). Photoplethysmography Revisited: From Contact to Noncontact, from Point to Imaging. In <i>IEEE Transactions on Biomedical Engineering</i> (Vol. 63, Issue 3, pp. 463–477). IEEE Computer Society. <a href="https://doi.org/10.1109/TBME.2015.2476337" target="_blank">https://doi.org/10.1109/TBME.2015.2476337</a></li>
+            <li>Tamura, T. (2019). Current progress of photoplethysmography and SPO2 for health monitoring. In <i>Biomedical Engineering Letters</i> (Vol. 9, Issue 1, pp. 21–36). Springer Verlag. <a href="https://doi.org/10.1007/s13534-019-00097-w" target="_blank">https://doi.org/10.1007/s13534-019-00097-w</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pulse Oximeter Guide. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
