@@ -377,26 +377,6 @@ box-shadow: 0 6px 12px rgba(233, 231, 231, 0.2);
     background-color: #48b44e; /* Lighter shade on hover */
 }
 
-/* Modal styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9001; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
 
 .close {
     color: #aaa;
@@ -412,18 +392,3 @@ box-shadow: 0 6px 12px rgba(233, 231, 231, 0.2);
     cursor: pointer;
 }
 
-/* Share links */
-.modal-content a {
-    display: block; /* Make each link take a full line */
-    margin: 10px 0;
-    padding: 10px;
-    color: #0984e3;
-    text-decoration: none;
-    border: 1px solid #0984e3;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.modal-content a:hover {
-    background-color: #dfe6e9;
-}
